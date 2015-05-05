@@ -9,7 +9,8 @@ export default DS.Model.extend({
     
     name: DS.attr('string'),
     description: DS.attr('string'),
-    notes: DS.hasMany('note')
+    notes: DS.hasMany('note',{async:true}),
+    isSelected: DS.attr('boolean', {defaultValue:false})
   
 }).reopenClass({
     FIXTURES: [
@@ -17,13 +18,15 @@ export default DS.Model.extend({
             id: 1,
             name: 'Light Bulb',
             description: 'A pretty awesome light from some place',
-            notes_ids: [1,2]
+            isSelected: false,
+            notes: [1,2]
         },
         {
             id: 2,
             name: 'Awesome Sauce',
             description: 'A spicy sauce used on everything',
-            notes_ids: [3,4]
+            isSelected: false,
+            notes: [3,4]
         }
     ]
 });

@@ -1,18 +1,49 @@
- <!--
-    THE PRODUCT LIST
+<!--
+    The forms to add products and rows
+-->
+<div class="row">
+    
+    <!--
+        Add a new product
+    --> 
+    
+    <div class="col s6">
+        
+        <!-- Add an ember input for quick product add -->
+        <div class="input-field">
+            
+            {{input type="text" id="new-product" placeholder="Add in a new product." value=newProduct action="createProduct"}}
+            
+        </div>
+              
+        
+    </div>
+    
+    <div class="col s6">
+        <!-- Add an ember input for quick note add -->
+        <div class="input-field">
+            
+            {{input type="text" id="new-note" placeholder="Add a note to selected product." value=newNote action="createNote" disabled=true}}
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--
+    The product list
 -->
 <div class="row">
     
     <div class="col s6">
         
-        <p>Its the products</p>
-        
         <ul class="collection">
 
             {{#each product in model}}
 
-        
-                <li class="collection-item">{{product.name}} - {{product.note.body}}</li>
+                
+                <a {{action "selectProduct" product on="click"}} href="#!" class="collection-item {{if product.isSelected 'active'}}">{{product.name}}</a>
             
 
             {{/each}}
@@ -22,11 +53,21 @@
     </div>
 
 <!--
-    THE NOTE LIST
+    The note list
+    Here we will run through each product and then each products notes
 -->
     <div class="col s6">
-        
-        <p>Its the notes</p>
+           
+        {{#each note in selectedProduct.notes}}
+
+        <div class="card {{note.color}}">
+           <div class="card-content white-text">
+                <span class="card-title">{{note.title}}</span>
+                <p>{{note.body}}</p>
+            </div>
+        </div>
+
+        {{/each}}
         
     </div>
     

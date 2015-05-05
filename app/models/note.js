@@ -1,5 +1,11 @@
 import DS from 'ember-data';
 
+/*
+    Here we are createing a model object for our note
+    We will also populate it with some existing data for
+    testing purposes.
+*/
+
 export default DS.Model.extend({
     
     product: DS.belongsTo('product'),
