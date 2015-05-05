@@ -13,24 +13,28 @@ export default DS.Model.extend({
             id:1,
             icon: '',
             color: 'red',
+            title: 'Title 1',
             body: 'This is comment 1'
         },
         {
             id:2,
             icon: '',
             color: 'blue',
+            title: 'Title 2',
             body: 'This is comment 2'
         },
         {
             id:3,
             icon: '',
             color: 'red',
+            title: 'Title 3',
             body: 'This is comment 3'
         },
         {
             id:4,
             icon: '',
             color: 'green',
+            title: 'Title 4',
             body: 'This is comment 4'
         }
         
