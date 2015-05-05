@@ -2,12 +2,11 @@
 
 # Tag-note-prototype
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a quick demonstration app built using Ember, Ember-CLI and Materialize frameworks. The app allows the user to add products and notes using a quick add system.
 
-## A project by Mitch
+## A project by Mitch Ellis, MELLISdesigns
 
-This project is a quick ember introduction using ember-cli and materialize to play around with some of the features of ember.
+This project was developed to demonstrate some Ember principles for core Web App Development. Make sure you follow the installation guide below due to some dependencies in the project.
 
 ## Prerequisites
 
