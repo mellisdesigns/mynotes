@@ -1,7 +1,13 @@
+
+
 # Tag-note-prototype
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
+
+## A project by Mitch
+
+This project is a quick ember introduction using ember-cli and materialize to play around with some of the features of ember.
 
 ## Prerequisites
 
