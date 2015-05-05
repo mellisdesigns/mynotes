@@ -9,7 +9,7 @@ export default DS.Model.extend({
     
     name: DS.attr('string'),
     description: DS.attr('string'),
-    notes: DS.hasMany('note',{async:true})
+    notes: DS.hasMany('note')
   
 }).reopenClass({
     FIXTURES: [
