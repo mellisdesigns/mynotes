@@ -3,10 +3,43 @@
     This is our intial ember template.
 -->
 <body>
+    <nav>
+        <div class="nav-wrapper teal darken-4">
+            <a href="#" class="brand-logo center">Weekend Ember Demo</a>
+        </div>
+    </nav>
+    
     <div class="container">
+
+        <div class="row">
+            
+            <div class="col s4">
+                <h5>Show me some notes!</h5>
+                <p><b>What do I do </b> I hear you ask? Well you can add products using the quick add system, then you can add notes to your selected product. There is a quick summary of how many notes are avaliable per product</p>
+                <hr/>
+                <p>I have been using angular alot and I love it, but I can't defend it without getting down and dirty with ember . . . Sorry Angular, ember is pretty kick ass as well.</p>
+
+                <hr/>
+
+                <p><b>So what is this? </b> Sometimes there are certain bits of information that don't really fit anywhere, but are pretty important. It could be client relations, product descriptions or even issues with supply. <b>Tagged Notes</b> allow us to create information segments with some form of categorization. We can categorize with color or titles or even icons.</p>
+            
+            
+                <hr/>
+            
+            <p>This project was developed with passion and chucked up publicly on github so thats anyone can reference some core concepts used in this project. <b>Features</b> that could also be added include <b>Inline Editing of Products and Notes, filtering and sorting of notes based on either color or title, full CRUD support for all items with persistant storage</b> all of which I intent to add.</p>
+                
+                </div>
+            
+            <div class="col s8">
         
-       {{outlet}}
+                <!--
+                Outlet for the Products Template
+                -->
+               {{outlet}}
+                
+            </div>
         
+        </div>
         
     </div>
 </body>

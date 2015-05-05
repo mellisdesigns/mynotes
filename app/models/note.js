@@ -20,29 +20,29 @@ export default DS.Model.extend({
             id:1,
             icon: '',
             color: 'red',
-            title: 'Title 1',
-            body: 'This is comment 1'
+            title: 'important',
+            body: 'The product needs to be handeled carfully due to a slippery outer case.'
         },
         {
             id:2,
             icon: '',
             color: 'blue',
-            title: 'Title 2',
-            body: 'This is comment 2'
+            title: 'communication',
+            body: 'The distributer is incredibly friendly, he likes lemon cake.'
         },
         {
             id:3,
             icon: '',
             color: 'red',
-            title: 'Title 3',
-            body: 'This is comment 3'
+            title: 'heavy',
+            body: 'This product weighs a ton. We struggled to get it through the door so some extra planning is required when moving the product'
         },
         {
             id:4,
             icon: '',
-            color: 'green',
-            title: 'Title 4',
-            body: 'This is comment 4'
+            color: 'blue',
+            title: 'communication',
+            body: 'If you ever go for coffee with this guy, make sure you really get it strong. He really likes his coffee!'
         }
         
     ]

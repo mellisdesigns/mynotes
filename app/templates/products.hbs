@@ -23,7 +23,7 @@
         <!-- Add an ember input for quick note add -->
         <div class="input-field">
             
-            {{input type="text" id="new-note" placeholder="Add a note to selected product." value=newNote action="createNote" disabled=true}}
+            {{input type="text" id="new-note" placeholder="Add a note to selected product." value=newNote action="createNote" disabled=disableCommentForm}}
             
         </div>
         
@@ -43,7 +43,7 @@
             {{#each product in model}}
 
                 
-                <a {{action "selectProduct" product on="click"}} href="#!" class="collection-item {{if product.isSelected 'active'}}">{{product.name}}</a>
+                <a {{action "selectProduct" product on="click"}} href="#!" class="collection-item {{if product.isSelected 'active'}}">{{product.name}} <span class="badge {{if product.isSelected 'white-text'}}">{{product.totalnotes}} notes</span></a>
             
 
             {{/each}}
