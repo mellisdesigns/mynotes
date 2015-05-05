@@ -1,9 +1,33 @@
-<ul class="collection">
+ <!--
+    THE PRODUCT LIST
+-->
+<div class="row">
+    
+    <div class="col s6">
+        
+        <p>Its the products</p>
+        
+        <ul class="collection">
 
-    {{#each}}
+            {{#each product in model}}
 
-    <li class="collection-item">{{name}}</li>
+        
+                <li class="collection-item">{{product.name}} - {{product.note.body}}</li>
+            
 
-    {{/each}}
+            {{/each}}
 
-</ul>
+        </ul>
+        
+    </div>
+
+<!--
+    THE NOTE LIST
+-->
+    <div class="col s6">
+        
+        <p>Its the notes</p>
+        
+    </div>
+    
+</div>
