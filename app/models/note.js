@@ -21,14 +21,14 @@ export default DS.Model.extend({
             icon: '',
             color: 'red',
             title: 'important',
-            body: 'The product needs to be handeled carfully due to a slippery outer case.'
+            body: 'The product needs to be handled carefully due to a slippery outer case.'
         },
         {
             id:2,
             icon: '',
             color: 'blue',
             title: 'communication',
-            body: 'The distributer is incredibly friendly, he likes lemon cake.'
+            body: 'The distributor is incredibly friendly, he likes lemon cake.'
         },
         {
             id:3,
