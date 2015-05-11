@@ -1,0 +1,29 @@
+<div class="card">
+
+        <!-- 
+        The Main Note Content
+        -->
+       <div class="card-content {{color}}">
+           <!-- 
+            The Main Note Title and Body
+            -->
+            {{#if isEditingTitle}}
+                <span class="card-title">
+                    {{focus-input class="input_nostyle" type="text" value=title insert-newline='titleComplete' focus-out='titleComplete'}}
+                </span>
+            {{else}}
+                <span class="card-title" {{action "editNoteTitle" on="doubleClick" }}>{{title}}</span>
+            {{/if}}
+            
+            <p class="white-text">{{body}}</p>
+        </div>
+    
+        <!-- 
+        The Main Note Action
+        -->
+    
+        <div class="card-action">
+            <i class="mdi-content-add"></i>
+            <i class="mdi-content-add"></i>
+        </div>
+</div>

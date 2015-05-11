@@ -12,6 +12,12 @@ export default Ember.ArrayController.extend({
     
     actions: {
         
+        editTodo: function(todoInput){
+            
+            console.log("HERE")
+            
+        },
+        
         selectProduct: function(productSelected){
             
             //Clear all selected products

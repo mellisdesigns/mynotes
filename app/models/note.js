@@ -12,7 +12,11 @@ export default DS.Model.extend({
     icon: DS.attr('string'),
     color: DS.attr('string'),
     title: DS.attr('string'),
-    body: DS.attr('string')
+    body: DS.attr('string'),
+    isEditingTitle: DS.attr('boolean', {defaultValue:false}),
+    isEditingBody: DS.attr('boolean', {defaultValue:false}),
+    isEditingColor: DS.attr('boolean', {defaultValue:false})
+    
   
 }).reopenClass({
     FIXTURES: [

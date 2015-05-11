@@ -59,13 +59,10 @@
     <div class="col s6">
            
         {{#each note in selectedProduct.notes}}
-
-        <div class="card {{note.color}}">
-           <div class="card-content white-text">
-                <span class="card-title">{{note.title}}</span>
-                <p>{{note.body}}</p>
-            </div>
-        </div>
+        
+            {{#note-card title=note.title body=note.body color=note.color}}
+        
+            {{/note-card}}
 
         {{/each}}
         
